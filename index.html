@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Viagem Pelos Trilhos</title>
+    <meta charset="utf-8" />
+
+    <!-- define a viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- inserindo css do Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" media="all" />
+
+    <!-- inserindo css do Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all" />
+
+    <link rel="stylesheet" href="css/trilho.css" media="all" />
+
+</head>
+
+<body>
+    <!-- Navegação -->
+    <Nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Cabeçalho do menu -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                <a class="navbar-brand" href="#">Turismo nos Trilhos</a>
+            </div>
+
+
+
+
+            <!-- itens do menu -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Estações e suas Histórias<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#espanha">Espanha</a></li>
+                            <li><a href="#inglaterra">Inglaterra</a></li>
+                            <li><a href="#portugal">Portugal</a></li>
+                            <li><a href="#frança">França</a></li>
+                            <li><a href="#suica">Suiça</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li><a href="#funcionarios">Funcionários</a></li>
+                    <li><a href="#galeriadetrem">Galeria de Trem Modernos</a></li>
+                    <li><a href="#faleconosco">Fale conosco</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Imagem slite -->
+    <div class="divslider" style="background-color: black;">
+        <div class="container-slider">
+            <div class="col-xs-12 hidden-xs">
+                <div id="sliderprincipal" class="carousel slide" data-ride="carousel" data-interval="5000" style="width:100%;">
+
+                    <ol class="carousel-indicators">
+                        <li class="active" data-target="#sliderprincipal" data-slide-to="0"></li>
+                        <li data-target="#sliderprincipal" data-slide-to="1"></li>
+                        <li data-target="#sliderprincipal" data-slide-to="2"></li>
+                        <li data-target="#sliderprincipal" data-slide-to="3"></li>
+                        <li data-target="#sliderprincipal" data-slide-to="4"></li>
+                    </ol>
+
+                    <div class="carousel-inner" role="listbox">
+
+                        <div class="item active">
+                            <img src="imagem/trem-Alemanha1.jpg" alt="Imagem slider 01" style="width: 100%;" />
+                            <div class="carousel-caption">
+                                <h1 class="display-2">Visite Alemnha de Trem</h1>
+
+                                <button type="button" class="btn btn-primary btn-lg">Veja</button>
+                                <button type="button" class="btn btn-primary btn-lg">Inicia</button>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="imagem/trem-suiça4.jpg" alt="Imagem slider 02" style="width: 100%;" />
+                            <div class="carousel-caption">
+                                <h1 class="display-2">Visite a Suiça de Trem</h1>
+
+                                <button type="button" class="btn btn-primary btn-lg">Veja</button>
+                                <button type="button" class="btn btn-primary btn-lg">Inicia</button>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <img src="imagem/Trem-Alemanha.jpg" alt="Imagem slider 03" style="width: 100%;" />
+                            <div class="carousel-caption">
+                                <h1 class="display-2">Visite a França de Trem</h1>
+
+                                <button type="button" class="btn btn-primary btn-lg">Veja</button>
+                                <button type="button" class="btn btn-primary btn-lg">Inicia</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="imagem/Trem-de-Luxo1.jpg" alt="Imagem slider 04" style="width: 100%;" />
+                            <div class="carousel-caption">
+                                <h1 class="display-2">Visite a Espanha de Trem</h1>
+
+                                <button type="button" class="btn btn-primary btn-lg">Veja</button>
+                                <button type="button" class="btn btn-primary btn-lg">Inicia</button>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="imagem/eurostar-trem-2.jpg" alt="Imagem slider 04" style="width: 100%;" />
+                            <div class="carousel-caption">
+                                <h1 class="display-2"></h1>
+                                <h3>Visite a Inglaterra de Trem</h3>
+                                <button type="button" class="btn btn-primary btn-lg">Veja</button>
+                                <button type="button" class="btn btn-primary btn-lg">Inicia</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controles -->
+
+                    <a class="left carousel-control" href="#sliderprincipal" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Anterior</span>
+                    </a>
+
+                    <a class="right carousel-control" href="#sliderprincipal" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Próximo</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Botoes -->
+    <div class="container-fluid">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <p class="lead">convidamos você a fazer uma rota pelas 11 linhas ferroviárias mais surpreendentes e únicas do mundo. Cada um dos vagões que você verá a seguir guarda em seu interior uma aura de luxo e exotismo que te deixará com vontade de fazer as malas
+                    hoje mesmo e sair viajando por paisagens inesquecíveis, amanheceres no deserto, templos religiosos, animais silvestres, montanhas verdes e povoados isolados.</p>
+
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <a href="#"><button type="button" class="btn btn-out out line-secondary btn-lg">Web Trens</button></a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- seção -->
+
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Para que serve.</h1>
+                <hr>
+                <div class="lead">
+                    <p class="lead">O trem é o meio mais rápido e civilizado de chegar a qualquer lugar situado a até 4 horas de distância. Para comparar: um vôo de uma hora de duração costuma resultar pelo menos nas mesmas quatro horas de viagem, contando os perrengues
+                        envolvidos no deslocamento, check-in e recolhimento de malas.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- colunas de seção -->
+
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-dollar-sign"></i>
+                <h3>Economica</h3>
+                <p>É o equivalente à classe econômica dos aviões só que, com exceção dos trens muito antigos, é bem mais confortável do que a classe econômica dos aviões. </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-subway" aria-hidden="true"></i>
+                <h3>ASSENTO</h3>
+                <p>Nos trens rápidos de Espanha, França e Itália, e em trens internacionais. </p>
+            </div>
+
+            <div class="col-sm-12 col-md-4">
+                <i class="fas fa-map-signs"></i>
+                <h3>MAPAS</h3>
+                <p>Uma das maiores cidades do mundo, Paris! A capital da França é também conhecida como Cidade Luz. </p>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+
+    <!-- Duas coluna da seção  -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-12 col-lg-6">
+                <h2>Onde Colocar as Malas</h2>
+                <p>
+                    No trem europeu você não despacha as malas. Na imensa maioria dos casos tampouco há limite máximo de peso. A limitação está justamente no tamanho de bagagem que você consegue carregar sozinho para dentro do trem e armazenar nos compartimentos disponíveis.</p>
+                <p>Malas maiores devem ser postas nas prateleiras que se encontram na entrada dos vagões; se já estiverem ocupadas, você vai ter que fazer força para pôr no compartimento acima do seu assento. (Alguns trens têm também espaço no vão entre
+                    assentos posicionados de costas uns para os outros).</p>
+
+                <p>A experiência leva os passageiros de trem a viajar leve. Procure viajar com uma mala de quatro rodinhas tamanho M (65 centímetros de altura, em pé). Leve também um cadeado de bicicleta para prender a mala ao gradil da prateleira, e assim
+                    não passar aflição enquanto a mala não estiver sob a sua mira. </p>
+
+                </p>
+                <br>
+                <a href="#" class="btn btn-primary">Leia Mais</a>
+            </div>
+            <div class="col-lg-6">
+                <img src="imagem/trem-mala2.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!--Galerias de Trem  -->
+    <section id="galeriadetrem">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-header">
+                        <h2>Galeria de Trem</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+                <img src="imagem/trem-1.jpg" class="thumbnail" width="120" style="float:left">
+                <img src="imagem/trem-2.jpg" class="thumbnail" width="120" style="float:left">
+                <img src="imagem/trem-4.jpg" class="thumbnail" width="120" style="float:left">
+                <img src="imagem/trem-5.jpg" class="thumbnail" width="120" style="float:left">
+                <img src="imagem/trem-7.jpg" class="thumbnail" width="120" style="float:left">
+                <img src="imagem/trem-8.jpg" class="thumbnail" width="120" style="float:left">
+                <img src="imagem/trem-9.jpg" class="thumbnail" width="120" style="float:left">
+                <img src="imagem/" class="thumbnail" width="120" style="float:left">
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-4">
+    <!-- Fixar Imagem -->
+
+        
+        <figure class="container-fluid padding">
+            <div>
+                <div>
+                    <h2>Mapas</h2>
+                    <img src="imagem/mapas.jpg">
+                </div>
+            </div>
+        </figure>
+    
+
+
+
+
+    <!--Nossos Time-->
+    <div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Funcionários</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <!--cards-->
+
+    <section id="funcionarios">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-xs-12">
+
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <div class="thumbnail" style="background-color: #eee;">
+                            <img src="imagem/team1.png">
+
+                            <div class="caption">
+
+                                <p style="font-style:oblique;">
+                                    Na França, como em vários outros países europeus, o sistema ferroviário é bem desenvolvido, com linhas que cobrem todas as regiões do país. Quem quer viajar de trem na França pode escolher entre várias opções de trens: dos pequenos trens regionais, ideais
+                                    para descobrir tranquilamente as paisagens, até o TGV trem de alta velocidade.
+                                </p>
+
+                               
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <div class="thumbnail" style="background-color: #eee;">
+                            <img src="imagem/team2.png">
+
+                            <div class="caption">
+
+                                <p style="font-style:oblique;">
+                                    Muito oportuna a matéria de hj do programa. O trem é uma realidade que passou a ser considerada como fundamental para passageiros e cargas em nosso País.A ida a feira InnoTrans em Berlin foi uma boa boa inicitaiva do setor. Ficamos felizes com nossa iniciativa
+                                    e como o Brasil obteve destaque no mundo com suas ferrovias.
+                                </p>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <div class="thumbnail" style="background-color: #eee;">
+                            <img src="imagem/team3.png">
+
+                            <div class="caption">
+                                <p style="font-style:oblique;">
+                                    Nossa que saudade que bateu do meus tempos de criança, querida saber de que foi a ideia brilhante de acabar com o trem de passageiro no brasil .Sortudo essas pessoas de vitoria que ainda podem utlilizar esse transporte maravilhoso.Nossa lembro quando
+                                    ia de bauru minha cidade para o mato grosso com toda minha familia.
+                                </p>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <div class="thumbnail" style="background-color: #eee;">
+                            <img src="imagem/time2.2.jpg">
+
+                            <div class="caption">
+                                <p style="font-style:oblique;">
+                                    ADOREI o especial sobre ferrovias, principalmente por estar trabalhando com este tema na minha dissertação de mestrado, que trata justamente da Estrada de Ferro Vitória a Minas, por este motivo venho aqui perguntar como posso adquirir esses programas
+                                    em DVD, pois enriqueceria em muito a minha dissertação.
+                                </p>
+
+                                                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Duas coluna e seções -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-12 col-lg-6">
+                <h2>Viajar de trem compensa</h2>
+                <p>
+                    Compensa se você dispõe de tempo suficiente, principalmente no caso de trechos longos, ou se você pretende explorar cidades do interior. Você também deve estar se perguntando se é possível viajar de trem na Europa sem gastar “os tubos”.</p>
+                <p>Não vou mentir, utilizar este meio de transporte pode nem sempre ser a opção mais em conta – como disse anteriormente, é difícil competir com os preços praticados por algumas cias aéreas – mas é algo viável sim.</p>
+                <p>Uma forma de estar sempre por dentro das promoções é se inscrever nas newsletters das empresas que operam nas áreas pretendidas, caso você esteja de olho em apenas um ou dois destinos.</p>
+                <br>
+            </div>
+            <div class="col-lg-6">
+                <img src="imagem/tremvg.jpg">
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+
+    <!--Formulário -->
+    <section id="faleconosco">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="page-header">
+                        <h12>Fale Conosco</h12>
+                    </div>
+
+
+                    <div class="col-xs-12">
+                        <form class="form-horizontal">
+                            <div class="form-group has-info">
+                                <label for="nome" class="col-xs-2 control-label">
+									Nome Completo:
+								</label>
+                                <div class="col-xs-10">
+                                    <input type="text" class="form-control" id="nome" />
+                                </div>
+                            </div>
+                            <p>&nbsp;</p>
+
+                            <div class="form-group has-info">
+                                <label for="email" class="col-xs-2 control-label">
+									E-mail:
+								</label>
+                                <div class="col-xs-10">
+                                    <input type="text" class="form-control" id="nome" />
+                                </div>
+                            </div>
+                            <p>&nbsp;</p>
+
+                            <div class="form-group">
+                                <label for="assunto" class="col-xs-2 control-label">
+									Assunto:
+								</label>
+                                <div class="col-xs-10">
+                                    <select class="form-control" id="assunto">
+										<option></option>
+										<option>Elogio</option>
+										<option>Reclamação</option>
+										<option>Câmbio</option>
+										<option>Cotação de presos</option>
+										<option>Outros assuntos</option>
+									</select>
+                                </div>
+                            </div>
+                            <p>&nbsp;</p>
+
+                            <div class="form-group has-info">
+                                <label for="email" class="col-xs-2 control-label">
+									É nosso cliente:
+								</label>
+                                <div class="col-xs-10 radio">
+                                    <label>
+										<input type="radio" name="cliente" id="id1" value="Sim">
+										Sim 
+									</label>
+
+                                    <label>
+										<input type="radio" name="cliente" id="id2" value="Não"> 
+										Não
+									</label>
+                                </div>
+                            </div>
+                    </div>
+                    <p>&nbsp;</p>
+
+                    <div class="form-group has-info">
+                        <label for="mensagem" class="col-xs-2 control-label">
+									Mensagem:
+								</label>
+                        <div class="col-xs-10">
+                            <textarea class="form-control" id="mensagem" rows="8" style="resize:none;">
+
+									</textarea>
+                        </div>
+                    </div>
+                    <p>&nbsp;</p>
+
+                    <div class="form-group">
+                        <div class=" col-xs-offset-2 col-xs-2">
+                            <button type="submit" class="btn btn-success">
+										Enviar Formulario
+									</button>
+                        </div>
+
+                        <div class="col-xs-2">
+                            <button type="reset" class="btn btn-success">
+										Limpar
+									</button>
+                        </div>
+                    </div>
+
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+        </div>
+    </section>
+
+    <!-- Conectar-->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2>Conectar</h2>
+            </div>
+            <div class="col-12 social padding">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h2>Viagem nós Trilhos</h2>
+                    <hr class="light">
+                    <P>885-254-23699</P>
+                    <p>email@viagemdetrem.com.br</p>
+                    <p>Avenida Central do Brasil</p>
+                    <p>Cidade, Estado, 000000</p>
+                </div>
+
+                <div class="col-md-4">
+                    <hr class="light">
+                    <h5>Horários dos Trem</h5>
+                    <hr class="light">
+                    <p>Segunda: 5:00 ás 00:00</p>
+                    <p>Terça: 6:00 ás 23:00</p>
+                    <p>Quarda: 7:00 ás 22:00</p>
+                </div>
+
+                <div class="col-md-4">
+                    <hr class="light">
+                    <hr5>Serviços</hr5>
+                    <hr class="light">
+                    <p>Cidade, estado, 00000</p>
+                    <p>Cidade, estado, 00000</p>
+                    <p>Cidade, estado, 00000</p>
+                    <p>Cidade, estado, 00000</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-100">
+                    <h5>&copi; passeiodetrem.com.br</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- script JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- inserindo JavaScript do Bootstrap -->
+    <!-- Última versão JavaScript compilada e minificada -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
